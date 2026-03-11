@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    char travel_name[30];
+    int travel_time;
+    float traveling_money;
+    char grade;
+    
+    printf("여행지를 입력하세요:");//화면출력 f(서식)
+    scanf("%s", &travel_name);//&주소,scanf는 키보드로 입력받을때.문자열은 %s.
+    printf("여행기간을 입력하세요:");
+    scanf("%d", &travel_time);
+    printf("여행경비를 입력하세요:");
+    scanf("%f", &traveling_money);
+    printf("여행 등급을 입력하세요(A,B,C):");
+    scanf(" %c", &grade);
+    //5.1f에서 5는출력되는 전체 길이를 최소 5칸으로 맞추라는 뜻이에요.
+    printf("여행지: %s\n",travel_name);
+    printf("여행일수: %d일\n", travel_time);
+    printf("여행 경비: %.1f만원\n", traveling_money);
+    printf("여행등급: %c\n", grade);
+    return 0;
+}    
+
