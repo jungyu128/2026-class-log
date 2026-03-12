@@ -1,0 +1,16 @@
+// Onhttps://www.programiz.com/line C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("숫자를 입력해주세요:");
+    scanf("%d", &num);
+    if(num % 2 == 0)//if는 조건문 소괄호를써야된다 %는 나머지{
+    printf("짝수.\n");
+    printf("2로 나눈 나머지가0\n");}
+    else//거짓일때만 실행됌{
+    printf("훌수.\n");
+    printf("2로나눈 나머지가 1\n");
+    }
+    return 0;
+}   
